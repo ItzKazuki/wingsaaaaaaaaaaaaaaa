@@ -253,7 +253,7 @@ type Configuration struct {
 	// if the debug flag is passed through the command line arguments.
 	Debug bool
 
-	AppName string `default:"Pterodactyl" json:"app_name" yaml:"app_name"`
+	AppName string `default:"FikqHosting" json:"app_name" yaml:"app_name"`
 
 	// A unique identifier for this node in the Panel.
 	Uuid string
