@@ -74,6 +74,7 @@ func Configure(m *wserver.Manager, client remote.Client) *gin.Engine {
 		server.POST("/ws/deny", postServerDenyWSTokens)
                 server.POST("/versions/list", getVersions)
                 server.POST("/versions/switch", switchVersion)
+		server.POST("/plugins/install", downloadPlugin)
 
 		// This archive request causes the archive to start being created
 		// this should only be triggered by the panel.
